@@ -1,0 +1,220 @@
+
+
+//colors
+$text: #1D1E2C;
+$text_lighter: #2C3C3F;
+$deep_blue: #5CB7FF;
+$light_blue: #EAF5FC;
+$light_white: #FDFDFD;
+$yellow: #FFB703;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: $light_white;
+    background-color: #5a5a5a;
+
+    button, textarea, input{
+        font-family: 'Barlow Semi Condensed', sans-serif !important;
+    }
+    button{
+        border: none !important;
+    }
+}
+
+// SECONDARY FONT
+.cursive{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 800 !important;
+    font-style: italic !important; 
+}
+
+
+// UNIVERSAL RULES
+.row{
+    display: flex;
+    align-items: center;
+}
+.stack{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.img{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: unset;
+}
+p a{
+    color: $deep_blue;
+}
+
+
+// FONT SIZES
+
+.subhead{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.headerS{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.headerM{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.headerL{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.descriptionS{
+    font-size: 12px;
+    line-height: 1.9;
+} 
+.descriptionM{
+    font-size: 14px;
+    line-height: 1.9;
+}
+.descriptionL{
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+// DESKTOP FONT SIZES
+// @media only screen and (min-width: 600px){
+
+// }
+
+
+// BG COLORS
+
+.bg__white{
+    background-color: $light_white;
+    color: $text;
+}
+
+.bg__blue{
+    background-color: $deep_blue;
+    color: white;
+}
+
+.bg__light_blue{
+    background-color: $light_blue;
+    color: $text_lighter;
+}
+
+// BUTTONS
+
+.btn{
+    display: inline-block;
+    padding: 10px 18px;
+    font-weight: 600;
+    text-align: center;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    border-radius: 3px;
+
+    text-shadow: 2px 2px rgba(27, 87, 151, 0.1);
+
+    transition: all .1s ease;
+}
+
+.btn__small{
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.btn_primary{
+    background-color: $deep_blue;
+    color: white;
+
+    &:hover{
+        background-color: #4ca0e4;
+    }
+}
+
+.btn_secondary{
+    background-color: #21425e58;
+    border: solid 1px $deep_blue;
+    font-weight: 500;
+    color: white;
+
+    &:hover{
+        background-color: #2d587e88;
+    }
+}
+
+
+
+
+// SCROLLBAR
+::-webkit-scrollbar{
+    background: #313131;
+    // border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(226, 226, 226);
+    border-radius: 3px;
+    transition: all .2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(199, 199, 199);
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+// ANIMATIONS
+.animate{
+    transition: all 1s ease;
+}
+
+.fade_up{
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translateY(100px) !important;
+}

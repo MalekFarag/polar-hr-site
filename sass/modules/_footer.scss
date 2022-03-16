@@ -1,0 +1,126 @@
+ 
+
+.main_footer{
+    box-sizing: border-box;
+    padding: 60px 25px;
+    .subhead{
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .footer_nav{
+
+        .nav_list{
+            margin-bottom: 60px;
+        }
+        li{
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+
+        a{
+            color: $text_lighter;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .social_nav{
+        display: flex;
+        justify-content: center;
+        .item{
+            height: 22px;
+            width: 22px;
+
+            margin: 0 15px;
+
+            &:hover{
+                opacity: .9;
+            }
+        }
+        .fb{
+            background-image: url('../images/icons/facebook.svg');
+        }
+
+        .linkedin{
+            background-image: url('../images/icons/linkedin.svg');
+        }
+    }
+
+    .copyright_text{
+        font-size: small;
+        text-align: center;
+        margin-top: 20px;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.mail_list_div{
+    margin-bottom: 60px;
+
+    .mailing_inputs{
+        display: flex;
+        align-items: center;
+
+        margin-top: 20px;
+
+
+        input{
+            padding: 8px 10px;
+            border: solid 1px lightgray;
+            font-size: 16px;
+
+            width: 100%;
+            max-width: 380px;
+
+        }
+
+        button{
+            border-radius: 0 3px 3px 0;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .main_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .footer_nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 35%;
+            margin-right: 60px;
+
+            .stack{
+                margin-right: 60px;
+            }
+        }
+
+        .mail_list_social{
+            width: 40%;
+        }
+
+        .copyright_text{
+            width: 100%;
+        }
+
+        .social_nav{
+            justify-content: flex-start;
+        }
+    }
+
+    .mail_list_div{
+        margin-bottom: 25px;
+    }
+}
