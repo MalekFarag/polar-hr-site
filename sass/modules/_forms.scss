@@ -1,0 +1,30 @@
+
+
+// inputs
+
+input,textarea,select,option{
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+
+.gray_input{
+
+    border: solid 1px lightgray;
+
+    color: $text_lighter;
+
+    box-sizing: border-box;
+
+    padding: 10px 14px;
+
+    font-size: medium;
+
+    &::placeholder{
+        font-style: italic;
+    }
+
+}

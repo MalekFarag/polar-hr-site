@@ -40,116 +40,58 @@ Vue.createApp({
 
 }).mount('#app')
 
-
-// const urlParams = new URLSearchParams(window.location.search);
-
-// const vm = new Vue({
-
-//     data:{
-//       isBurger: true,
-//       isStart: true,
-//       islightbox: true,
-//       isHover: true,
-//       thumbnail: '',
-
-//       landing_page_instance: urlParams.get('landing-page'),
-
-//     },
-
-
-//     methods:{
-//       openHover: function(){
-//         this.isHover = false;
-//       },
-
-//       closeHover: function(){
-//         this.isHover = true;
-//       },
-
-//       toggleBurger: function(){
-//         this.isBurger = !this.isBurger;
-//       },
-
-//       openStart: function(){
-//         this.isStart = !this.isStart;
-//       },
-
-//       closeStart: function(){
-//         this.isStart = !this.isStart;
-//       },
-
-//       openTeam: function(){
-//         let member = event.target.parentElement;
-//         // console.log(member);
-//         member.classList.toggle('expand');
-//       },
-
-//       openlb: function(){
-//         this.islightbox = !this.islightbox;
-
-//         this.thumbnail = event.target.style.backgroundImage;
-//       },
-
-//       closelb: function(){
-//         this.islightbox = !this.islightbox;
-//       },
-
-      
-
-//     },
-//   }).$mount("#app");
-
-
-
-//waypoints
-let target1 = document.querySelectorAll('.t1');
-if(typeof(document.querySelector('.wp1')) != 'undefined' && document.querySelector('.wp1') != null){
-  var waypoint = new Waypoint({
-    element: document.querySelector('.wp1'),
-    handler: function(direction) {
-      target1.forEach(tar => tar.classList.remove('animFadeUp'));
-    }
-  })
-}
-
-
-let target2 = document.querySelectorAll('.t2');
-
-if(typeof(document.querySelector('.wp2')) != 'undefined' && document.querySelector('.wp2') != null){
-  var waypoint = new Waypoint({
-  element: document.querySelector('.wp2'),
-  handler: function(direction) {
-    target2.forEach(tar => tar.classList.remove('animFadeUp'));
-  }
-})
-}
-
-
-let target3 = document.querySelectorAll('.t3');
-
-if(typeof(document.querySelector('.wp3')) != 'undefined' && document.querySelector('.wp3') != null){
-  var waypoint = new Waypoint({
-  element: document.querySelector('.wp3'),
-  handler: function(direction) {
-    target3.forEach(tar => tar.classList.remove('animFadeUp'));
-  }
-})
-}
-
-
-
-let target4 = document.querySelectorAll('.t4');
-
-if(typeof(document.querySelector('.wp4')) != 'undefined' && document.querySelector('.wp4') != null){
-  var waypoint = new Waypoint({
-  element: document.querySelector('.wp4'),
-  handler: function(direction) {
-    target4.forEach(tar => tar.classList.remove('animFadeUp'));
-  }
-})
-}
-
-
+//WAYPOINTS 
   
+  //HEADER
+
+  let header = document.querySelector('.main_header');
+
+  // header init
+  header.classList.add('top_header');
+  let back_to_top = document.querySelector('#back_to_top');
+  var waypoint = new Waypoint({
+    element: document.querySelector('.header_waypoint'),
+    handler: function (direction) {
+
+      if(direction == 'down'){
+        header.classList.remove('top_header');
+        back_to_top.classList.remove('hide')
+      }
+
+      if(direction == 'up'){
+        header.classList.add('top_header');
+        back_to_top.classList.add('hide')
+      }
+      
+    }
+  });
 
 
+// TEXT REPLACE 
+const target = document.getElementById('replace');
+let texts = ['Selling Products', 'Innovation', 'Colleges', 'Changing The World', 'Providing Quality Services', ]
+
+var i = 0;
+
+function changeText(){
+
+  setInterval(function(){
+    target.classList.add('hide')
+
+    setTimeout(function(){
+      target.innerHTML = texts[i];
+      if(i < ( texts.length - 1 ) ){
+        i++;
+      }else{
+        i = 0;
+      }
+
+      setTimeout(function(){
+        target.classList.remove('hide')
+      }, 100)
+    }, 200)
+    
+  }, 5000)
+}
+
+changeText();

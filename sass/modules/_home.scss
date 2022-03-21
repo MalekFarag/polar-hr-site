@@ -1,24 +1,34 @@
 
 
-section{
-    margin: 50px auto;
+.section{
+    margin: 60px auto;
     max-width: 1440px;
     box-sizing: border-box;
     padding: 40px 15px;
 }
 
-.heroSection{
-    // padding-top: 60px;
+
+// HERO SECTION
+.hero_section{
+    
     color: white;
-    padding: 0 !important;
+    background-color: lightgray;
+    padding: 0;
+
+    padding-top: 140px;
+
+    background-image: url('../images/hero_mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     .inner{
         box-sizing: border-box;
         padding: 50px 15px;
 
         background-image: url('../images/icons/mountain.svg');
-        background-position: left bottom;
-        background-size: 130% 50%;
+        background-position: -30% bottom;
+        background-size: 130%;
         background-repeat: no-repeat;
 
         br{
@@ -51,11 +61,19 @@ section{
 
 @media only screen and (min-width: 700px){
 
-    .heroSection{
+    .hero_section{
+        background-image: url('../images/hero_desktop.jpg');
         .inner{
             background-image: url('../images/icons/mountain-desktop.svg');
             background-size: 75%;
             background-position: right bottom;
+
+            .info{
+                max-width: 1440px;
+                box-sizing: border-box;
+                padding: 20px 40px;
+                padding-bottom: 0;
+            }
 
             .headerL{
                 text-align: left;
@@ -84,4 +102,444 @@ section{
             }
         }
     }
+}
+
+
+
+// FOCUS SECTION
+
+.focus_section{
+    text-align: center;
+
+    #replace{
+        transition: all .1s linear;
+        opacity: 1;
+    }
+
+    .headerS{
+        .small{
+            font-size: medium;
+        }
+        .cursive{
+            padding-top: 10px;
+            display: inline-block;
+            
+        }
+    }
+
+    .line{
+        background-color: lightgray;
+        height: 120px;
+        width: 1px;
+        margin: 50px auto;
+    }
+
+    .point_list{
+        justify-content: center;
+
+        .point{
+            margin: 50px auto;
+            max-width: 375px;
+
+            .subhead{
+                line-height: 1.6;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .focus_section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        #replace{
+            width: 600px;
+        }
+
+        .headerS{
+            position: sticky;
+            top: 40vh;
+            text-align: left;
+            .small{
+                font-size: x-large !important;
+            }
+
+            .cursive{
+                font-size: 46px !important;
+            }
+        }
+
+        .line{
+            display: none;
+        }
+
+        .point{
+            .subhead{
+                margin-top: 15px !important;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+// SPECIALIZE SECTION
+
+
+.specialize_section{
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        img{
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .info{
+            margin: 20px auto;
+            max-width: 600px;
+
+            .headerM{
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .icon_list{
+            .item{
+                margin: 20px 0;
+            }
+
+            .icon{
+                background-color: white;
+                border-radius: 100%;
+                min-height: 65px;
+                min-width: 65px;
+                height: 65px;
+                width: 65px;
+
+                margin-right: 10px;
+
+                background-size: 55%;
+            }
+
+            .suitcase{
+                background-image: url('../images/icons/suitcase.svg');
+            }
+            .users{
+                background-image: url('../images/icons/users.svg');
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 900px){
+    .specialize_section{
+        .section{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            img{
+                order: 2;
+                width: 40%;
+                margin: 50px 0;
+            }
+
+            .info{
+                // margin-right: 60px;
+                width: 32%;
+                margin: 50px 0;
+            }
+        }
+    }
+}
+
+
+
+// OUR PROCESS SECTION
+
+.process_section{
+    .hide_mobile{
+        display: none;
+    }
+
+    .headerM{
+        margin-bottom: 20px;
+    }
+
+
+    .info{
+        box-sizing: border-box;
+        padding: 20px 35px;
+        border-radius: 8px;
+        margin: 20px auto;
+    }
+
+    .list{
+        list-style: outside decimal;
+        
+
+        
+
+        font-weight: 500;
+
+        line-height: 1.5;
+        
+
+        li{
+            margin: 30px 0;
+        }
+    }
+
+    .btn{
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    .process_section{
+        .hide_mobile{
+            display: block;
+        }
+
+        .info{
+            margin-left: 50px;
+        }
+
+        .list{
+
+            // min-height: 420px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            // padding-bottom: 0 !important;
+
+            .stack{
+                width: 40%;
+                margin-right: 10px;
+            }
+        }
+
+        .btn{
+            max-width: 375px;
+            margin: 0;
+            margin-bottom: 20px;
+            margin-left: 25px;
+        }
+
+        img{
+            max-width: 50%;
+        }
+    }
+}
+
+
+
+
+// AGENCY SECTION
+
+
+.agency_section{
+
+    .headerM{
+        margin-bottom: 20px;
+        text-align: center;
+        .small{
+            font-size: x-large;
+        }
+        .cursive{
+            padding-top: 10px;
+            display: inline-block;
+            
+        }
+    }
+
+    .btn{
+        display: block;
+        max-width: 350px;
+
+        margin: 20px auto;
+        font-size: large;
+    }
+
+
+    .point_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        
+
+        .point{
+            margin: 30px 10px;
+
+            max-width: 325px;
+
+            text-align: center;
+
+            .descriptionL{
+                margin-top: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+// SAVE MONEY SECTION
+
+.save_section{
+
+
+    .stack{
+        box-sizing: border-box;
+        padding: 30px;
+
+        color: white;
+
+        max-width: 700px;
+
+        img{
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            max-width: 450px;
+        }
+
+        .headerM{
+            font-weight: 600;
+            // line-height: 1.7;
+        }
+
+        ul{
+            list-style: outside circle;
+
+            box-sizing: border-box;
+            padding-left: 20px;
+
+            margin: 20px 0;
+
+            max-width: 450px;
+
+
+            li{
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .save_section{
+
+        display: flex;
+        align-items: center;
+
+
+        background-image: url('../images/polar_bear.png');
+        background-size: 60%;
+        background-position: right 101%;
+        background-repeat: no-repeat;
+
+        border-radius: 4px;
+
+
+        img{
+            display: none;
+        }
+
+        
+
+        .stack{
+            width: 60%;
+            .headerM{
+                font-size: 44px;
+            }
+
+            .btn{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+// CONTACT SECTION
+
+.contact_section{
+    .headerM{
+        margin-bottom: 15px;
+    }
+}
+
+.contact_form{
+    margin-top: 20px;
+    max-width: 650px;
+    .row_side{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gray_input{
+        margin: 10px 0;
+    }
+
+    .btn{
+        margin-top: 20px;
+        max-width: 375px;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .contact_section{
+        display: flex;
+        justify-content: space-evenly;
+
+        .info{
+            margin-right: 40px;
+            width: 40%;
+
+            .headerM{
+                font-size: 44px;
+            }
+        }
+
+        .contact_form{
+            width: 50%;
+            margin-top: 0;
+
+            
+        }
+
+    }
+
+    .row_side{
+        flex-direction: row !important;
+
+        .gray_input{
+            flex-grow: 2;
+        }
+
+        .gray_input:first-child{
+            margin-right: 10px;
+        }
+    }
+    
 }

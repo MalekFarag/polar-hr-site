@@ -1,5 +1,5 @@
 
-<header class="main_header" :class="{ nav__on : isMenu }">
+<header id='top' class="main_header" :class="{ nav__on : isMenu }">
 
     <a href='/' class="logo img"></a>
 
@@ -18,3 +18,6 @@
     <div class="burger img" @click="toggle_menu()"></div>
 
 </header>
+<div class="header_waypoint" style='position: relative; top: 5px;'></div>
+
+<a id="back_to_top" class='hide' href="#top"></a>

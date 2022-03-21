@@ -14,16 +14,67 @@ html{
 }
 
 
+#back_to_top{
+    display: block;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    z-index: 10;
+
+    border-radius: 5px;
+
+    background-color: white;
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.1);
+    color: $text_lighter;
+
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url('../images/icons/chevron-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    // padding: 18px 20px;
+    // font-size: xx-large;
+    // text-align: center;
+
+    cursor: pointer;
+
+    transition: all .1s ease;
+
+    &:hover{
+        background-color: rgb(250, 250, 250);
+    }
+}
+
+.hide{
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.hidden{
+    display: none;
+}
+
+
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: $light_white;
-    background-color: #5a5a5a;
+    // background-color: #5a5a5a;
+    color: $text_lighter;
 
     button, textarea, input{
         font-family: 'Barlow Semi Condensed', sans-serif !important;
     }
     button{
         border: none !important;
+    }
+
+    img{
+        max-width: 100%;
+        border-radius: 4px;
     }
 }
 
@@ -32,6 +83,7 @@ body{
     font-family: 'Playfair Display', serif !important;
     font-weight: 800 !important;
     font-style: italic !important; 
+    line-height: 1.3;
 }
 
 
@@ -87,23 +139,26 @@ p a{
 // FONT SIZES
 
 .subhead{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .headerS{
     font-size: 22px;
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .headerM{
     font-size: 32px;
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .headerL{
     font-size: 38px;
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .descriptionS{
@@ -111,11 +166,11 @@ p a{
     line-height: 1.9;
 } 
 .descriptionM{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.9;
 }
 .descriptionL{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.9;
 }
 
@@ -155,7 +210,7 @@ p a{
     font-size: 14px;
     border-radius: 3px;
 
-    text-shadow: 2px 2px rgba(27, 87, 151, 0.1);
+    text-shadow: 2px 2px rgba(27, 87, 151, 0.2);
 
     transition: all .1s ease;
 }
@@ -182,6 +237,17 @@ p a{
 
     &:hover{
         background-color: #2d587e88;
+    }
+}
+
+.btn_white{
+    background-color: white;
+    color: $deep_blue;
+    font-weight: bold;
+    text-shadow: none;
+
+    &:hover{
+        background-color: rgb(247, 247, 247);
     }
 }
 
