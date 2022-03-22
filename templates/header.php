@@ -1,5 +1,5 @@
-
-<header id='top' class="main_header" :class="{ nav__on : isMenu }">
+<div id="top" class='hide'></div>
+<header class="main_header" :class="{ nav__on : isMenu }">
 
     <a href='/' class="logo img"></a>
 

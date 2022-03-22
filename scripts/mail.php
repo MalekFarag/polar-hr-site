@@ -1,7 +1,13 @@
 
 <?php
 
-$from_email = "info@polarhr.com"
+
+function build_email($title, $text, $link, $button_text){
+    return include "email_template.php";
+}
+
+
+$from_email = "info@polarhr.com";
 
 
 if(isset($_POST['submit'])){
@@ -18,9 +24,15 @@ if(isset($_POST['submit'])){
         error_reporting(E_ALL);
         $from = $from_email;
         $to = $email;
-        $subject = "Thanks For Breaking the Ice! | Reve Solutions";
+        $subject = "Welcome to Polar HR";
 
-        $message = '';
+        $text = "Hi $name,
+        
+Thanks for breaking the ice! We have received your message. A Polar HR representative will contact you within 1-2 business days.
+
+- The Polar HR Team";
+
+        $message = build_email($subject, $text, FALSE, FALSE);
 
         $headers = 'From: '.$from;
         // Sending mail
@@ -32,13 +44,27 @@ if(isset($_POST['submit'])){
         error_reporting(E_ALL);
         $from = $from_email;
         $to = $from_email;
-        $subject = "Inquiry From $company | Polar HR Site";
-        $message = '';
+        $subject = "Message From $name | Polar HR Site";
+
+        $text = "Hi Polar HR team,
+
+A message has been received from $name.
+
+-------------
+
+Name: $name
+Company: $company
+Email: $email
+Message:
+
+$message";
+
+        $message = build_email($subject, $text, FALSE, FALSE);
 
         $headers = 'From:'.$from;
         mail($to,$subject,$message,$headers);
 
-        redirect_to('https://revesolutions.ca/sent');
+        redirect_to('https://polar-hr.ca/sent');
                 
                         
         }

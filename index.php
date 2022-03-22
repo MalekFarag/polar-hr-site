@@ -4,7 +4,7 @@
 
 <!-- PAGE TITLE -->
 <?php startblock('title') ?>
-    Home
+    High Quality Recuiting For Professional Businesses in London, Ontario | Polar HR
 <?php endblock() ?>
 
 <!-- PAGE CONTENT -->

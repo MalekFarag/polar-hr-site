@@ -69,7 +69,7 @@ Vue.createApp({
 
 // TEXT REPLACE 
 const target = document.getElementById('replace');
-let texts = ['Selling Products', 'Innovation', 'Colleges', 'Changing The World', 'Providing Quality Services', ]
+let texts = ['Selling Products', 'Innovation', 'Changing The World', 'Providing Quality Services', ]
 
 var i = 0;
 

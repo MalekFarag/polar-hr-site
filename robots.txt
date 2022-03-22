@@ -1,6 +1,3 @@
 User-agent: *
 Crawl-delay: 12
-Disallow: /config
-Disallow: /admin
-Disallow: pay.php
-Sitemap: https://revesolutions.ca/sitemap.xml
+Disallow: /scripts
