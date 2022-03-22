@@ -6,7 +6,6 @@ function build_email($title, $text, $link, $button_text){
     return include "email_template.php";
 }
 
-
 $from_email = "info@polarhr.com";
 
 

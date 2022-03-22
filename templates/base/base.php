@@ -1,4 +1,4 @@
-<?php include 'templates/base/ti.php';?>
+<?php include 'load.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
