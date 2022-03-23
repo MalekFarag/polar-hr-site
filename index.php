@@ -39,7 +39,7 @@
             <h3 class="headerS">
                 <span class="small">Your Business is Focused on...</span>
                 <br>
-                <span class="cursive" id='replace'>Providing Quality Services</span>
+                <span class="cursive deep_blue" id='replace'>Providing Quality Services</span>
             </h3>
 
             <div class="line"></div>
@@ -145,7 +145,7 @@
         <h3 class="headerM">
             <span class="small">More than just a</span>
             <br>
-            <span class="cursive">Recruitment Agency</span>
+            <span class="cursive deep_blue">Recruitment Agency</span>
         </h3>
 
         <div class="point_list">
@@ -231,7 +231,38 @@
 
     </section>
 
+<?php endblock() ?>
 
 
+<?php startblock('footer_script') ?>
+
+    <script type='module'>
+
+        //WAYPOINTS HEADER
+
+        let header = document.querySelector('.main_header');
+
+        // header init
+        header.classList.add('top_header');
+        let back_to_top = document.querySelector('#back_to_top');
+        var waypoint = new Waypoint({
+            element: document.querySelector('.header_waypoint'),
+            handler: function (direction) {
+
+            if(direction == 'down'){
+                header.classList.remove('top_header');
+                back_to_top.classList.remove('hide')
+            }
+
+            if(direction == 'up'){
+                header.classList.add('top_header');
+                back_to_top.classList.add('hide')
+            }
+            
+            }
+        });
+    </script>
 
 <?php endblock() ?>
+
+

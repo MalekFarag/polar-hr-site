@@ -40,31 +40,6 @@ Vue.createApp({
 
 }).mount('#app')
 
-//WAYPOINTS 
-  
-  //HEADER
-
-  let header = document.querySelector('.main_header');
-
-  // header init
-  header.classList.add('top_header');
-  let back_to_top = document.querySelector('#back_to_top');
-  var waypoint = new Waypoint({
-    element: document.querySelector('.header_waypoint'),
-    handler: function (direction) {
-
-      if(direction == 'down'){
-        header.classList.remove('top_header');
-        back_to_top.classList.remove('hide')
-      }
-
-      if(direction == 'up'){
-        header.classList.add('top_header');
-        back_to_top.classList.add('hide')
-      }
-      
-    }
-  });
 
 
 // TEXT REPLACE 
