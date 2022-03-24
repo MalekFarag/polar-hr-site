@@ -17,12 +17,12 @@
         <h2 class="headerL" style='line-height: 1.3;'>Top of the Food Chain <br><span class="deep_blue"> HR Solutions</span></h2>
 
         <p class="descriptionM">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nesciunt. Ad numquam laudantium quae autem! Aliquam saepe, mollitia possimus excepturi provident fuga repellat quibusdam sit dicta doloremque eveniet hic ratione.
+        Experience the difference with our top level Human Resource services. Polar HR is owned and operated by business professionals with a proven track record of successfully organizing and building trusted relationships with businesses across a multitude of industries.
         </p>
 
     </div>
 
-    <img src="" alt="">
+    <img src="images/hr-solutions-hero.jpg" alt="polar bear" style="max-width: 650px;">
 
 </section>
 
@@ -31,15 +31,16 @@
 
         <div class="section">
 
-            <img src="images/specialize.jpg" alt="Recruiter and candiadate shaking hands" style='order: 0;'>
+            <img src="images/hr-solutions-1.jpg" alt="Recruiter and candiadate shaking hands" style='order: 0;'>
 
             <div class="info">
                 <h3 class="headerM" style='font-weight: 700;'>
                     Experience the Difference with <span class="deep_blue"> Polar HR</span>
-
                 </h3>
 
-                <p class="descriptionM" style='margin-bottom: 30px'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt laboriosam tempore voluptatum asperiores iusto ducimus expedita architecto, ratione optio adipisci provident laudantium, dolore hic. Dignissimos quam eius magnam nobis?</p>
+                <p class="descriptionM" style='margin-bottom: 30px'>
+                Contact us now for a free consultation. Polar HR focuses on building trusted relationships with employers and candidates in order to offer the simplest and most reliable HR solutions.
+                </p>
               
                 <a href="./contact" class="btn btn_primary">Contact Us</a>
             </div>

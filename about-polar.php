@@ -16,13 +16,13 @@
     <div class="info">
         <h2 class="headerL">About <span class="deep_blue"> Polar HR</span></h2>
 
-        <p class="descriptionM">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nesciunt. Ad numquam laudantium quae autem! Aliquam saepe, mollitia possimus excepturi provident fuga repellat quibusdam sit dicta doloremque eveniet hic ratione.
+        <p class="descriptionL">
+            *** Mission statement goes here ***
         </p>
 
     </div>
 
-    <img src="" alt="">
+    <img src="images/about-hero.jpg" alt="">
 
 </section>
 
@@ -34,21 +34,21 @@
 
     <div class="point_list" style="justify-content: center;">
         <div class="point stack">
-            <img src="images/agency-3.jpg" alt="" style='margin-bottom: 10px;'>
+            <img src="images/about-1.jpg" alt="" style='margin-bottom: 10px;'>
             <h6 class="headerS deep_blue text-left">Recruiting</h6>
             <p class="descriptionM text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt veniam corrupti, adipisci repellat itaque earum esse nulla eligendi.
+                Helping cemployers meet their business needs by hiring employees that are a good long term fit. We regularly keep in contact with all parties to ensure a positive and predictable experience.
             </p>
-            <a href="/recruiting" class="btn btn_primary" style='margin-left: 0;'>Learn More</a>
+            <a href="./recruiting" class="btn btn_primary" style='margin-left: 0;'>Learn More</a>
         </div>
 
         <div class="point stack">
-            <img src="images/agency-3.jpg" alt="" style='margin-bottom: 10px;'>
+            <img src="images/about-2.jpg" alt="" style='margin-bottom: 10px;'>
             <h6 class="headerS deep_blue text-left">HR Solutions</h6>
             <p class="descriptionM text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt veniam corrupti, adipisci repellat itaque earum esse nulla eligendi.
+                Polar HR focuses on building trusted relationships with employers and candidates in order to offer the simplest and most reliable HR solutions. Contact us now for a free consultation. 
             </p>
-            <a href="/hr-solutions" class="btn btn_primary" style='margin-left: 0;'>Learn More</a>
+            <a href="./hr-solutions" class="btn btn_primary" style='margin-left: 0;'>Learn More</a>
         </div>
     </div>
 

@@ -3,17 +3,30 @@
 
     background-color: rgb(248, 248, 248);
     padding: 100px 20px;
-    padding-top: 130px;
+    // padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .info{
+        text-align: center;
+
+        h2{
+            margin-bottom: 15px;
+        }
+    }
 
     img{
         order: -1;
-        height: 200px;
+        width: 100%;
+        margin: 40px auto;
     }
 }
 
 @media only screen and (min-width: 700px){
     .hero_section_2{
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         // padding: 100px 20px;
@@ -23,12 +36,62 @@
         .info{
             max-width: 500px;
             width: 35%;
+            text-align: left;
         }
 
         img{
             order: 0;
             height: auto;
             width: 45%;
+            max-width: 550px;
+            margin: 0;
         }
     }
+}
+
+
+// recruiting page
+.process_section .bullet_list li{
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.process_section .row{
+    flex-wrap: wrap;
+
+    margin: 40px auto;
+
+    img{
+        order: -1;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .process_section .row{
+        flex-wrap: nowrap;
+    
+        img{
+            order: 0 !important;
+            max-width: 50%;
+        }
+    }
+}
+
+
+//error page
+
+.center_wrap{
+    background-color: $light_white;
+    height: 100vw;
+    width: 100vw;
+
+    .info{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(1.1);
+    }
+
+
 }

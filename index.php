@@ -132,7 +132,7 @@
                     
                 </ol>
 
-                <a href="./contact" class="btn btn_primary">Contact Us</a>
+                <a href="./recruiting" class="btn btn_primary">Learn More</a>
 
             </div>
         </div>
@@ -172,7 +172,7 @@
 
         </div>
 
-        <a href="/contact" class="btn btn_primary">Contact Us</a>
+        <a href="./contact" class="btn btn_primary">Contact Us</a>
 
     </section>
 
@@ -192,14 +192,14 @@
                 <li>Job ready employees assessed by experienced HR professionals</li>
             </ul>
 
-            <a href="./contact" class="btn btn_white">Contact Us</a>
+            <a href="#contact" class="btn btn_white">Get Started</a>
 
         </div>
 
     </section>
 
 
-    <section class="section contact_section">
+    <section class="section contact_section" id='contact'>
 
         <div class="stack info">
             <h3 class="headerM">Contact Us Now</h3>
@@ -214,7 +214,7 @@
             </p>
         </div>
 
-        <form method="post" class='contact_form stack'>
+        <form method="post" class='contact_form stack' >
 
             <div class="row_side">
                 <input class='gray_input' type="text" name="name" id="name" placeholder="*Name" required>
@@ -261,6 +261,38 @@
             
             }
         });
+
+
+        
+
+        // TEXT REPLACE 
+        const target = document.getElementById('replace');
+        let texts = ['Selling Products', 'Innovation', 'Changing The World', 'Providing Quality Services', ]
+
+        var i = 0;
+
+        function changeText(){
+
+        setInterval(function(){
+            target.classList.add('hide')
+
+            setTimeout(function(){
+            target.innerHTML = texts[i];
+            if(i < ( texts.length - 1 ) ){
+                i++;
+            }else{
+                i = 0;
+            }
+
+            setTimeout(function(){
+                target.classList.remove('hide')
+            }, 100)
+            }, 200)
+            
+        }, 5000)
+        }
+
+        changeText();
     </script>
 
 <?php endblock() ?>

@@ -1,7 +1,7 @@
 <div id="top" class='hide'></div>
 <header class="main_header" :class="{ nav__on : isMenu }">
 
-    <a href='/' class="logo img"></a>
+    <a href='./' class="logo img"></a>
 
     <nav class="main_nav">
         <ul class="nav_list">
@@ -13,7 +13,7 @@
         </ul>
     </nav>
 
-    <a href="/recruiting" class="btn btn_primary">Find Employees Now</a>
+    <a href="./recruiting" class="btn btn_primary">Find Employees Now</a>
 
     <div class="burger img" @click="toggle_menu()"></div>
 

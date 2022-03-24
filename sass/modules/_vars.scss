@@ -139,6 +139,11 @@ p a{
     color: #40a9ff !important; 
 }
 
+.bullet_list{
+    list-style: disc outside;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
 
 // FONT SIZES
 

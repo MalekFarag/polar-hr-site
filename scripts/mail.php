@@ -63,7 +63,7 @@ $message";
         $headers = 'From:'.$from;
         mail($to,$subject,$message,$headers);
 
-        redirect_to('https://polar-hr.ca/sent');
+        redirect_to('https://polar-hr.ca/success');
                 
                         
         }
