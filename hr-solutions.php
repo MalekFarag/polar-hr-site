@@ -31,7 +31,7 @@
 
         <div class="section">
 
-            <img src="images/hr-solutions-1.jpg" alt="Recruiter and candiadate shaking hands" style='order: 0;'>
+            <img src="images/hr-solutions-1.jpg" alt="Recruiter and candidate shaking hands" style='order: 0;'>
 
             <div class="info">
                 <h3 class="headerM" style='font-weight: 700;'>

@@ -37,7 +37,7 @@
             <img src="images/about-1.jpg" alt="" style='margin-bottom: 10px;'>
             <h6 class="headerS deep_blue text-left">Recruiting</h6>
             <p class="descriptionM text-left">
-                Helping cemployers meet their business needs by hiring employees that are a good long term fit. We regularly keep in contact with all parties to ensure a positive and predictable experience.
+                Helping employers meet their business needs by hiring employees that are a good long term fit. We regularly keep in contact with all parties to ensure a positive and predictable experience.
             </p>
             <a href="./recruiting" class="btn btn_primary" style='margin-left: 0;'>Learn More</a>
         </div>

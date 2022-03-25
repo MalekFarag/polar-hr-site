@@ -15,7 +15,7 @@
 
             <div class="info">
                 <h2 class="headerL">
-                    High-Qulity 
+                    High-Quality 
                     <span class="cursive">Employees</span> <br>
                     Drive High-Quality
                     <span class="cursive">Businesses</span>
@@ -74,7 +74,7 @@
 
         <div class="section">
 
-            <img src="images/specialize.jpg" alt="Recruiter and candiadate shaking hands">
+            <img src="images/specialize.jpg" alt="Recruiter and candidate shaking hands">
 
             <div class="info">
                 <h3 class="headerM italic">
@@ -121,7 +121,7 @@
                 <ol class="list subhead">
                     <div class="stack">
                         <li>Learn your recruitment needs and your workplace culture</li>
-                        <li>Commence a targeted search out candidates that have career aspirations in line with your role</li>
+                        <li>Commence a targeted search for candidates that have career aspirations in line with your role</li>
                         <li>Send you qualified candidates that we feel align with your culture</li>
                     </div>
                     

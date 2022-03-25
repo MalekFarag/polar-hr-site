@@ -71,7 +71,7 @@
             <div class="info">
                 <h4 class="headerM">Get your <br> <span class="deep_blue">free consultation now</span></h4>
                 <p class="descriptionL">
-                Get a free consultation today and experience why so many businesses choose Polar HR to find high-quality candidates that fit your company and its’ culture.
+                Get a free consultation today and experience why so many businesses choose Polar HR to find high-quality candidates that fit your company and its culture.
                     <br> <br>
                     Our service fees are a percentage of the annual base pay. Discounted rates may be agreed to if multiple roles are required to fill.
                 </p>
