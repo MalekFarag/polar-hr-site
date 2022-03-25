@@ -109,6 +109,9 @@
             <input class='gray_input' type="email" name="email" id="email" placeholder="*Email" required>
 
             <textarea class='gray_input textarea' name="message" id="message" rows="1" placeholder="Message"></textarea>
+            
+            <!-- RECAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6LfqnA4fAAAAAAtsPT-AXDAKcbFwC11xM8DpoicF"></div>
 
             <button type='submit' class="btn btn_primary">Submit</button>
 
