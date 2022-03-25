@@ -10,15 +10,15 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # www to non-www
 #RewriteEngine On
-#RewriteCond %{HTTP_HOST} ^www.revesolutions.ca [NC]
-#RewriteRule ^(.*)$ https://revesolutions.ca/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} ^www.polarhr.ca [NC]
+#RewriteRule ^(.*)$ https://polarhr.ca/$1 [L,R=301]
 
 
 # force SSL
 #RewriteEngine On
 #RewriteCond %{SERVER_PORT} 80
-#RewriteRule ^(.*)$ https://www.revesolutions.ca/$1 [R,L]
+#RewriteRule ^(.*)$ https://www.polarhr.ca/$1 [R,L]
 #RewriteEngine On
-#RewriteCond %{HTTP_HOST} ^revesolutions\.ca [NC]
+#RewriteCond %{HTTP_HOST} ^polarhr\.ca [NC]
 #RewriteCond %{SERVER_PORT} 80
-#RewriteRule ^(.*)$ https://www.revesolutions.ca/$1 [R,L]
+#RewriteRule ^(.*)$ https://www.polarhr.ca/$1 [R,L]
