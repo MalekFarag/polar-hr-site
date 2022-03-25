@@ -6,7 +6,7 @@ function build_email($title, $text, $link, $button_text){
     return include "email_template.php";
 }
 
-$from_email = "info@polarhr.com";
+$from_email = "chantelle@polarhr.ca";
 
 
 if(isset($_POST['submit'])){
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
         error_reporting(E_ALL);
         $from = $from_email;
         $to = $email;
-        $subject = "Welcome to Polar HR";
+        $subject = "Welcome to Polar HR!";
 
         $text = "Hi $name,
         
@@ -63,7 +63,7 @@ $message";
         $headers = 'From:'.$from;
         mail($to,$subject,$message,$headers);
 
-        redirect_to('https://polar-hr.ca/success');
+        redirect_to('./success');
                 
                         
         }
