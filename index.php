@@ -119,14 +119,11 @@
             <div class="info bg__light_blue">
 
                 <ol class="list subhead">
-                    <div class="stack">
-                        <li>Learn your recruitment needs and your workplace culture</li>
-                        <li>Commence a targeted search for candidates that have career aspirations in line with your role</li>
-                        <li>Send you qualified candidates that we feel align with your culture</li>
-                        <li>Coordinate candidate interviews </li>
-                        <li>Complete reference checks (upon request)</li>
-                    </div>
-                    
+                    <li>Learn your recruitment needs and your workplace culture</li>
+                    <li>Commence a targeted search for candidates that have career aspirations in line with your role</li>
+                    <li>Send you qualified candidates that we feel align with your culture</li>
+                    <li>Coordinate candidate interviews </li>
+                    <li>Complete reference checks (upon request)</li>
                 </ol>
 
                 <a href="./recruiting" class="btn btn_primary">Learn More</a>

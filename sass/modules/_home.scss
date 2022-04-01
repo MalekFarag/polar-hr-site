@@ -287,8 +287,8 @@
 
     .list{
         list-style: outside decimal;
-        
 
+        text-align: left;
         
 
         font-weight: 500;
@@ -314,7 +314,7 @@
         }
 
         .info{
-            margin-left: 50px;
+            padding-left: 65px;
         }
 
         .list{
@@ -322,15 +322,16 @@
             // min-height: 420px;
 
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            flex-direction: column;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // justify-content: space-evenly;
             // padding-bottom: 0 !important;
 
-            .stack{
-                width: 40%;
-                margin-right: 10px;
-            }
+            // .stack{
+            //     width: 40%;
+            //     margin-right: 10px;
+            // }
         }
 
         .btn{
