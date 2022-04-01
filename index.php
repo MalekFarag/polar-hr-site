@@ -123,9 +123,6 @@
                         <li>Learn your recruitment needs and your workplace culture</li>
                         <li>Commence a targeted search for candidates that have career aspirations in line with your role</li>
                         <li>Send you qualified candidates that we feel align with your culture</li>
-                    </div>
-                    
-                    <div class="stack">
                         <li>Coordinate candidate interviews </li>
                         <li>Complete reference checks (upon request)</li>
                     </div>
@@ -199,40 +196,7 @@
     </section>
 
 
-    <section class="section contact_section" id='contact'>
-
-        <div class="stack info">
-            <h3 class="headerM">Contact Us Now</h3>
-            <p class="descriptionM">
-                Experience the difference! Find permanent, high quality employees with Polar HR. Contact us now for a free consultation.
-
-                <br> <br>
-                <span class="italic">
-                    * Represents required fields.
-                </span>
-                
-            </p>
-        </div>
-
-        <form method="post" class='contact_form stack' >
-
-            <div class="row_side">
-                <input class='gray_input' type="text" name="name" id="name" placeholder="*Name" required>
-                <input class='gray_input' type="text" name="company" id="company" placeholder="Company">
-            </div>
-            
-            <input class='gray_input' type="email" name="email" id="email" placeholder="*Email" required>
-
-            <textarea class='gray_input textarea' name="message" id="message" rows="1" placeholder="Message"></textarea>
-
-            <!-- RECAPTCHA -->
-            <div class="g-recaptcha" data-sitekey="6LfqnA4fAAAAAAtsPT-AXDAKcbFwC11xM8DpoicF"></div>
-
-            <button type='submit' class="btn btn_primary">Submit</button>
-
-        </form>
-
-    </section>
+    <?php include 'templates/contact_section.php';?>
 
 <?php endblock() ?>
 

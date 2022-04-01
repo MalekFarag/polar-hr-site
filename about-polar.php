@@ -17,7 +17,7 @@
         <h2 class="headerL">About <span class="deep_blue"> Polar HR</span></h2>
 
         <p class="descriptionL">
-            *** Mission statement goes here ***
+            Our mission at Polar HR is to become a trusted partner for our clients helping them bridge a gap in Human Resources.
         </p>
 
     </div>
