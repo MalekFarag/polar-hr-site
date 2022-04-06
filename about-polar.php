@@ -46,7 +46,7 @@
             <img src="images/about-2.jpg" alt="" style='margin-bottom: 10px;'>
             <h6 class="headerS deep_blue text-left">HR Solutions</h6>
             <p class="descriptionM text-left">
-                Polar HR focuses on building trusted relationships with employers and candidates in order to offer the simplest and most reliable HR solutions. Contact us now for a free consultation. 
+                Polar HR focuses on building trusted relationships with employers in order to offer the simplest and most reliable HR solutions.
             </p>
             <a href="./hr-solutions" class="btn btn_primary" style='margin-left: 0;'>Learn More</a>
         </div>

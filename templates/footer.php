@@ -64,8 +64,8 @@
         <!--End mc_embed_signup-->
 
         <div class="social_nav">
-            <a href="#" class="item fb img"></a>
-            <a href="#" class="item linkedin img"></a>
+            <a href="https://www.facebook.com/polarhr2022" class="item fb img" target="_blank"></a>
+            <a href="https://www.linkedin.com/company/polar-hr/about/" class="item linkedin img" target="_blank"></a>
         </div>
     </div>
     
