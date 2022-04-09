@@ -23,8 +23,6 @@ if(isset($_POST['submit']) && isset($_POST['g-recaptcha-response']) && !empty($_
 
     if($response->success == True) {
         // What happens when the CAPTCHA was entered correctly
-        // print 'Successful login.';
-        
 
         $name = trim($_POST['name']);
         $company = trim($_POST['company']);
@@ -49,7 +47,7 @@ Thanks for breaking the ice! We have received your message. A Polar HR represent
 
             $message = build_email($subject, $text, FALSE, FALSE);
 
-            $headers = 'From: '.$from;
+            $headers = 'From:'.$from;
             // Sending mail
             mail($to,$subject,$message,$headers);
 
