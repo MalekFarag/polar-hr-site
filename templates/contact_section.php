@@ -19,7 +19,7 @@
             </a>    
         </div>
 
-        <form method="post" class='contact_form stack'>
+        <form action="" method="post" class='contact_form stack'>
 
             <div class="row_side">
                 <input class='gray_input' type="text" name="name" id="name" placeholder="*Name" required>
@@ -33,7 +33,7 @@
             <!-- RECAPTCHA -->
             <div class="g-recaptcha" data-sitekey="6LfqnA4fAAAAAAtsPT-AXDAKcbFwC11xM8DpoicF"></div>
 
-            <button type='submit' class="btn btn_primary">Submit</button>
+            <button name='submit' type='submit' class="btn btn_primary">Submit</button>
 
         </form>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title; ?> | Polar HR</title>
+    <title>%TITLE% | Polar HR</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
 
     <!-- css -->
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://polarhr.ca/css/style.css" type="text/css">
 </head>
 <body>
 
@@ -101,7 +101,7 @@
             background-repeat: no-repeat;
         }
         .logo{
-            background-image: url('https://polar-hr.ca/images/polar-hr-logo.png');
+            background-image: url('https://polarhr.ca/images/polar-hr-logo.png');
             height: 35px;
             background-position: center !important;
             /* background-color: #e0fbff; */
@@ -115,33 +115,18 @@
 
         <div class="container">
             <div class="headerImg"></div>
+            <!--<img src="https://polarhr.ca/images/polar-hr-logo.png" width="110">-->
             <div class="img logo"></div>
             <div class="info stack">
-                <?php if ($title): ?>
                 <h2 class="headerM">
                     <!-- title -->
-                    <?php echo $title; ?>
+                    %TITLE%
                 </h2>
-                <?php endif; ?>
 
-                <?php if ($text): ?>
                 <p class="descriptionM">
                     <!-- text small -->
-                    <?php echo $text; ?>
+                    %TEXT%
                 </p>
-                <?php endif; ?>
-
-                <?php if ($link): ?>
-                <div class="row">
-                    <a 
-                    href="<?php echo $link; ?>"
-                    class="btn btn_primary" target='_blank'>
-                        <!-- button link above -->
-                        <!-- button text -->
-                        <?php echo $button_text; ?>
-                    </a>
-                </div>
-                <?php endif; ?>
             </div>
         </div>
 

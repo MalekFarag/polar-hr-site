@@ -2,11 +2,7 @@
 <?php
 
 
-function build_email($title, $text, $link, $button_text){
-    return include "email_template.php";
-}
-
-$from_email = "chantelle@polarhr.ca";
+$from_email = "Polar HR <chantelle@polarhr.ca>";
 
 
 if(isset($_POST['submit']) && isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
@@ -40,16 +36,21 @@ if(isset($_POST['submit']) && isset($_POST['g-recaptcha-response']) && !empty($_
             $subject = "Welcome to Polar HR!";
 
             $text = "Hi $name,
-        
+        <br>
 Thanks for breaking the ice! We have received your message. A Polar HR representative will contact you within 1-2 business days.
+<br>
+- The Polar HR Team<br><br><br>";
 
-- The Polar HR Team";
+            $body = file_get_contents("./scripts/email_template.php");
+            $body = str_replace("%TITLE%", $subject, $body);
+            $body = str_replace("%TEXT%", $text, $body);
+            
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            $headers .= "From:" . $from;
 
-            $message = build_email($subject, $text, FALSE, FALSE);
-
-            $headers = 'From:'.$from;
             // Sending mail
-            mail($to,$subject,$message,$headers);
+            mail($to,$subject,$body,$headers);
 
         
             // TO POLAR
@@ -60,24 +61,31 @@ Thanks for breaking the ice! We have received your message. A Polar HR represent
             $subject = "Message From $name | Polar HR Site";
 
             $text = "Hi Polar HR team,
-
+<br>
 A message has been received from $name.
+<br><br>
+-------------<br>
+<br><br>
+Name: $name<br>
+Company: $company<br>
+Email: $email<br>
+Message:<br>
 
--------------
+$message
+<br><br><br>
+";
 
-Name: $name
-Company: $company
-Email: $email
-Message:
+            $body = file_get_contents("./scripts/email_template.php");
+            $body = str_replace("%TITLE%", $subject, $body);
+            $body = str_replace("%TEXT%", $text, $body);
 
-$message";
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            $headers .= "From:" . $from;
 
-            $message = build_email($subject, $text, FALSE, FALSE);
+            mail($to,$subject,$body,$headers);
 
-            $headers = 'From:'.$from;
-            mail($to,$subject,$message,$headers);
-
-            redirect_to('./success');
+            header('Location: https://polarhr.ca/success');
         }
                 
                         
